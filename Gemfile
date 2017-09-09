@@ -45,6 +45,20 @@ group :development, :test do
 end
 
 group :development do
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'minitest-reporters'
+  gem 'guard'
+  gem 'guard-minitest'
+end
+
+group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
