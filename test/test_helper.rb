@@ -1,5 +1,7 @@
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+
+# 成功/失敗の表示設定 gem minitest-reporters
 require "minitest/reporters"
 Minitest::Reporters.use!
 
